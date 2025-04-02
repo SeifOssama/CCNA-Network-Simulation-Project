@@ -1,9 +1,13 @@
 # CCNA Network Simulation Project: A Comprehensive Hands-On Refresh of Core Networking Concepts
 
-Project Scope and Key Implementations
+## Project Scope and Key Implementations
 
 This project simulates a fully functioning network, focusing on both Layer 2 and Layer 3 technologies, along with advanced configurations such as security measures, WAN connectivity, and VPN setups. The network setup consists of routers, switches, hosts, and various configurations, all within Cisco Packet Tracer.
-Layer 1: Physical Layer
+
+## Network Diagram
+![Network Diagram](SeifNetworks-Lab.png)
+
+## Layer 1: Physical Layer
 
     Network Devices:
 
@@ -15,7 +19,7 @@ Layer 1: Physical Layer
 
         IPv4 addressing scheme implemented, with subnetting for multiple subnets across the network.
 
-Layer 2: Data Link Layer
+## Layer 2: Data Link Layer
 
     Dynamic Trunking Protocol (DTP):
 
@@ -45,7 +49,7 @@ Layer 2: Data Link Layer
 
         Enabled DHCP Snooping to protect the network from rogue DHCP servers and enforce trusted DHCP relay agents.
 
-Layer 3: Network Layer
+## Layer 3: Network Layer
 
     Inter-VLAN Routing (MLS):
 
@@ -59,7 +63,7 @@ Layer 3: Network Layer
 
         Created ACLs to filter traffic based on source and destination IP addresses, providing security and traffic management.
 
-WAN Technologies
+## WAN Technologies
 
     PPP (Point-to-Point Protocol):
 
@@ -73,11 +77,11 @@ WAN Technologies
 
         Configured port forwarding to allow external access to internal services (e.g., web servers, FTP servers).
 
-Wireless Technologies
+## Wireless Technologies
 
     Configured wireless routers and access points, providing Wi-Fi connectivity across the network with appropriate security settings (WPA2).
 
-VPN Technologies
+## VPN Technologies
 
     Site-to-Site VPN:
 
@@ -93,7 +97,7 @@ Security Measures
 
         Ensured that only authorized devices could connect to the network by enforcing port security and DHCP snooping.
 
-Conclusion
+## Conclusion
 
 This hands-on project has allowed me to revisit and solidify key CCNA concepts in a practical, real-world network design. It has given me the confidence to apply these skills in any enterprise network environment, enhancing my proficiency as a network professional.
 
