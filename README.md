@@ -7,95 +7,95 @@ This project simulates a fully functioning network, focusing on both Layer 2 and
 ## Network Diagram
 ![Network Diagram](SeifNetworks-Lab.png)
 
-## Layer 1: Physical Layer
+### Layer 1: Physical Layer
 
-    Network Devices:
+   - Network Devices:
 
-        Configured Switches, Routers, and Hosts to represent an enterprise network.
+        - Configured Switches, Routers, and Hosts to represent an enterprise network.
 
-        Proper cabling techniques applied for Ethernet, fiber, and serial connections.
+        - Proper cabling techniques applied for Ethernet, fiber, and serial connections.
 
-    IP Addressing:
+   - IP Addressing:
 
-        IPv4 addressing scheme implemented, with subnetting for multiple subnets across the network.
+       - IPv4 addressing scheme implemented, with subnetting for multiple subnets across the network.
 
-## Layer 2: Data Link Layer
+### Layer 2: Data Link Layer
 
-    Dynamic Trunking Protocol (DTP):
+   - Dynamic Trunking Protocol (DTP):
 
-        Configured DTP on trunk ports to allow automatic negotiation of trunk links between switches.
+        - Configured DTP on trunk ports to allow automatic negotiation of trunk links between switches.
 
-    VLAN Trunking Protocol (VTP):
+   - VLAN Trunking Protocol (VTP):
 
-        Used VTP in transparent mode for the efficient propagation of VLAN information across switches.
+        - Used VTP in transparent mode for the efficient propagation of VLAN information across switches.
 
-    VLAN Configuration:
+   - VLAN Configuration:
 
-        Created multiple VLANs for separating broadcast domains and assigned them to the appropriate switch ports.
+        - Created multiple VLANs for separating broadcast domains and assigned them to the appropriate switch ports.
 
-    Spanning Tree Protocol (STP):
+   - Spanning Tree Protocol (STP):
 
-        Configured STP for loop prevention, with the selection of root bridge to ensure redundancy without network loops.
+       - Configured STP for loop prevention, with the selection of root bridge to ensure redundancy without network loops.
 
-    EtherChannel:
+   - EtherChannel:
 
-        EtherChannel implemented between switches using LACP to provide higher bandwidth and redundancy.
+       - EtherChannel implemented between switches using LACP to provide higher bandwidth and redundancy.
 
-    Port Security:
+   - Port Security:
 
-        Configured port security on access ports to limit device access by MAC address and prevent MAC flooding attacks.
+       - Configured port security on access ports to limit device access by MAC address and prevent MAC flooding attacks.
 
-    DHCP Snooping:
+  -  DHCP Snooping:
 
-        Enabled DHCP Snooping to protect the network from rogue DHCP servers and enforce trusted DHCP relay agents.
+       - Enabled DHCP Snooping to protect the network from rogue DHCP servers and enforce trusted DHCP relay agents.
 
-## Layer 3: Network Layer
+### Layer 3: Network Layer
 
-    Inter-VLAN Routing (MLS):
+   - Inter-VLAN Routing (MLS):
 
-        Used Layer 3 switches for Inter-VLAN Routing, enabling communication between different VLANs through routing interfaces.
+       - Used Layer 3 switches for Inter-VLAN Routing, enabling communication between different VLANs through routing interfaces.
 
-    DHCP Configuration:
+   - DHCP Configuration:
 
-        Configured DHCP and DHCP Relay to automatically assign IP addresses to hosts in different subnets.
+       - Configured DHCP and DHCP Relay to automatically assign IP addresses to hosts in different subnets.
 
-    Access Control Lists (ACLs):
+   - Access Control Lists (ACLs):
 
-        Created ACLs to filter traffic based on source and destination IP addresses, providing security and traffic management.
+       - Created ACLs to filter traffic based on source and destination IP addresses, providing security and traffic management.
 
-## WAN Technologies
+### WAN Technologies
 
-    PPP (Point-to-Point Protocol):
+  -  PPP (Point-to-Point Protocol):
 
-        Configured PPP for WAN connectivity between remote sites with proper authentication using PAP and CHAP.
+       - Configured PPP for WAN connectivity between remote sites with proper authentication using PAP and CHAP.
 
-    Network Address Translation (NAT):
+  -  Network Address Translation (NAT):
 
-        Implemented Static NAT, Dynamic NAT, and PAT for efficient IP address management between internal and external networks.
+      -  Implemented Static NAT, Dynamic NAT, and PAT for efficient IP address management between internal and external networks.
 
-    Port Forwarding:
+  -  Port Forwarding:
 
-        Configured port forwarding to allow external access to internal services (e.g., web servers, FTP servers).
+       - Configured port forwarding to allow external access to internal services (e.g., web servers, FTP servers).
 
-## Wireless Technologies
+### Wireless Technologies
 
-    Configured wireless routers and access points, providing Wi-Fi connectivity across the network with appropriate security settings (WPA2).
+   - Configured wireless routers and access points, providing Wi-Fi connectivity across the network with appropriate security settings (WPA2).
 
-## VPN Technologies
+### VPN Technologies
 
-    Site-to-Site VPN:
+   - Site-to-Site VPN:
 
-        Established a site-to-site VPN to provide secure communication between two remote locations using IPSec encryption.
+      -  Established a site-to-site VPN to provide secure communication between two remote locations using IPSec encryption.
 
-Security Measures
+### Security Measures
 
-    Access Control Lists (ACLs):
+   - Access Control Lists (ACLs):
 
-        Implemented ACLs for traffic filtering at both the router and switch levels, enhancing security by controlling inbound and outbound network traffic.
+      -  Implemented ACLs for traffic filtering at both the router and switch levels, enhancing security by controlling inbound and outbound network traffic.
 
-    Port Security and DHCP Snooping:
+   - Port Security and DHCP Snooping:
 
-        Ensured that only authorized devices could connect to the network by enforcing port security and DHCP snooping.
+      -  Ensured that only authorized devices could connect to the network by enforcing port security and DHCP snooping.
 
 ## Conclusion
 
